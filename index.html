@@ -2,6 +2,7 @@
 <html class="scroll-smooth" lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dr. Anya Sharma - Psychologist</title>
     <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -63,11 +64,11 @@
     <div class="min-h-screen flex flex-col">
       <header class="sticky top-0 bg-white/80 backdrop-blur-md z-10">
         <nav
-          class="container mx-auto px-6 lg:px-10 py-4 flex items-center justify-between"
+          class="container mx-auto px-4 sm:px-6 lg:px-10 py-4 flex items-center justify-between"
         >
           <a class="flex items-center gap-3" href="#home">
             <svg
-              class="w-8 h-8 text-[var(--primary-color)]"
+              class="w-6 h-6 sm:w-8 sm:h-8 text-[var(--primary-color)]"
               fill="none"
               viewBox="0 0 48 48"
               xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +80,7 @@
                 fill-rule="evenodd"
               ></path>
             </svg>
-            <h1 class="text-xl font-bold text-[var(--text-primary)]">
+            <h1 class="text-lg sm:text-xl font-bold text-[var(--text-primary)]">
               Afifa Amassery
             </h1>
           </a>
@@ -113,7 +114,10 @@
           >
             Book Appointment
           </a>
-          <button class="md:hidden text-[var(--text-primary)]">
+          <button
+            id="mobile-menu-button"
+            class="md:hidden text-[var(--text-primary)]"
+          >
             <svg
               aria-hidden="true"
               class="h-6 w-6"
@@ -130,10 +134,46 @@
             </svg>
           </button>
         </nav>
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden bg-white border-t border-gray-200"
+        >
+          <div class="px-4 pt-2 pb-3 space-y-1">
+            <a
+              class="block px-3 py-2 text-base font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
+              href="#home"
+              >Home</a
+            >
+            <a
+              class="block px-3 py-2 text-base font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="block px-3 py-2 text-base font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
+              href="#services"
+              >Services</a
+            >
+            <a
+              class="block px-3 py-2 text-base font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
+              href="#contact"
+              >Contact</a
+            >
+            <a
+              class="block w-full text-center px-3 py-2 rounded-md bg-[var(--primary-color)] text-white font-semibold mt-4"
+              href=""
+              target="_blank"
+              rel="noopener"
+            >
+              Book Appointment
+            </a>
+          </div>
+        </div>
       </header>
       <main class="flex-grow">
         <section
-          class="relative h-[60vh] min-h-[480px] bg-cover bg-center flex items-end"
+          class="relative h-[50vh] sm:h-[60vh] min-h-[400px] sm:min-h-[480px] bg-cover bg-center flex items-end"
           id="home"
           style="
             background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtdTP43t5rrds3axY8aLxkZIHB2U6dJduubYgLscvncTIuhXGhaL2uT9VWbvRo0Gqf6X_XkFwKixND-oMhjz9UidcZSlIi-sO6dutVKX_P3DDuNN_k0SMHIvZOGK7Qw12Gl8e3H__Wc2HbaC6hPAjctOFaWwRtEymyoVhdvI2kiqA0AVA9bcxPfX5Xh4KDb_Pq9kSKCR_yTFp3JvAkm0gzpDag0LdGl-AEMHhLJjUuurqngmeCIgMx9b7-zalO9R917Wa8qEIlqFFE');
@@ -141,20 +181,20 @@
         >
           <div class="absolute inset-0 hero-gradient"></div>
           <div
-            class="relative container mx-auto px-6 lg:px-10 pb-16 text-white max-w-4xl"
+            class="relative container mx-auto px-4 sm:px-6 lg:px-10 pb-8 sm:pb-16 text-white max-w-4xl"
           >
             <h1
-              class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4"
+              class="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4"
             >
               Compassionate Care for Mental Wellness
             </h1>
-            <p class="text-lg md:text-xl max-w-3xl">
+            <p class="text-base sm:text-lg md:text-xl max-w-3xl">
               Afifa amassery is a licensed psychologist dedicated to providing
               personalized and evidence-based therapy to help individuals
               achieve their mental health goals.
             </p>
             <a
-              class="mt-8 inline-block rounded-md bg-[var(--primary-color)] px-8 py-3 text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-all duration-300"
+              class="mt-6 sm:mt-8 inline-block rounded-md bg-[var(--primary-color)] px-6 sm:px-8 py-2.5 sm:py-3 text-base sm:text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-all duration-300"
               href="https://forms.gle/Wwda3PbX2CPFEwSN8"
               target="_blank"
               rel="noopener"
@@ -163,11 +203,11 @@
             </a>
           </div>
         </section>
-        <section class="py-20 bg-white" id="about">
-          <div class="container mx-auto px-6 lg:px-10">
+        <section class="py-12 sm:py-20 bg-white" id="about">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-10">
             <div class="max-w-4xl mx-auto text-center">
               <h2
-                class="text-3xl md:text-4xl font-bold text-[var(--text-primary)] tracking-tight"
+                class="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--text-primary)] tracking-tight"
               >
                 About Afifa amassery
               </h2>
@@ -182,11 +222,11 @@
             </div>
           </div>
         </section>
-        <section class="py-20 bg-slate-50" id="services">
-          <div class="container mx-auto px-6 lg:px-10">
-            <div class="max-w-4xl mx-auto text-center mb-16">
+        <section class="py-12 sm:py-20 bg-slate-50" id="services">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-10">
+            <div class="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
               <h2
-                class="text-3xl md:text-4xl font-bold text-[var(--text-primary)] tracking-tight"
+                class="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--text-primary)] tracking-tight"
               >
                 Our Services
               </h2>
@@ -196,19 +236,23 @@
                 loved ones.
               </p>
             </div>
-            <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
-              <div class="flex flex-col gap-6">
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start"
+            >
+              <div class="flex flex-col gap-4 sm:gap-6">
                 <img
                   alt="Couple Therapy"
-                  class="rounded-lg shadow-lg object-cover w-full h-64"
+                  class="rounded-lg shadow-lg object-cover w-full h-48 sm:h-64"
                   src="./couple-therapy.jpg"
                 />
-                <div class="text-center md:text-left">
-                  <h3 class="text-2xl font-bold text-[var(--text-primary)]">
+                <div class="text-center md:text-left px-4 sm:px-0">
+                  <h3
+                    class="text-xl sm:text-2xl font-bold text-[var(--text-primary)]"
+                  >
                     Couple Therapy
                   </h3>
                   <p
-                    class="mt-4 text-md text-[var(--text-secondary)] leading-7"
+                    class="mt-4 text-sm sm:text-md text-[var(--text-secondary)] leading-7"
                   >
                     Our couple therapy sessions provide a safe and neutral space
                     for partners to navigate challenges, improve communication,
@@ -218,18 +262,20 @@
                   </p>
                 </div>
               </div>
-              <div class="flex flex-col gap-6">
+              <div class="flex flex-col gap-4 sm:gap-6">
                 <img
                   alt="Child Therapy"
-                  class="rounded-lg shadow-lg object-cover w-full h-64"
+                  class="rounded-lg shadow-lg object-cover w-full h-48 sm:h-64"
                   src="./child-therapy.jpeg"
                 />
-                <div class="text-center md:text-left">
-                  <h3 class="text-2xl font-bold text-[var(--text-primary)]">
+                <div class="text-center md:text-left px-4 sm:px-0">
+                  <h3
+                    class="text-xl sm:text-2xl font-bold text-[var(--text-primary)]"
+                  >
                     Child Therapy
                   </h3>
                   <p
-                    class="mt-4 text-md text-[var(--text-secondary)] leading-7"
+                    class="mt-4 text-sm sm:text-md text-[var(--text-secondary)] leading-7"
                   >
                     We offer compassionate and effective therapy for children
                     facing emotional and behavioral challenges. Our play-based
@@ -242,11 +288,14 @@
             </div>
           </div>
         </section>
-        <section class="py-20 bg-[var(--secondary-color)]" id="contact">
-          <div class="container mx-auto px-6 lg:px-10">
+        <section
+          class="py-12 sm:py-20 bg-[var(--secondary-color)]"
+          id="contact"
+        >
+          <div class="container mx-auto px-4 sm:px-6 lg:px-10">
             <div class="max-w-2xl mx-auto text-center">
               <h2
-                class="text-3xl md:text-4xl font-bold text-[var(--text-primary)] tracking-tight"
+                class="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--text-primary)] tracking-tight"
               >
                 Ready to Take the Next Step?
               </h2>
@@ -255,7 +304,7 @@
                 begin your journey towards mental wellness.
               </p>
               <a
-                class="mt-10 inline-block rounded-md bg-[var(--primary-color)] px-8 py-3 text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-all duration-300"
+                class="mt-8 sm:mt-10 inline-block rounded-md bg-[var(--primary-color)] px-6 sm:px-8 py-2.5 sm:py-3 text-base sm:text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-all duration-300"
                 href="https://forms.gle/Wwda3PbX2CPFEwSN8"
                 target="_blank"
                 rel="noopener"
@@ -268,11 +317,18 @@
       </main>
       <footer class="bg-gray-100 border-t border-gray-200">
         <div
-          class="container mx-auto px-6 lg:px-10 py-8 text-center text-gray-500"
+          class="container mx-auto px-4 sm:px-6 lg:px-10 py-8 text-center text-gray-500"
         >
           <p>© 2024 Dr. Anya Sharma. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
