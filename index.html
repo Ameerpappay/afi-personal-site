@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dr. Anya Sharma - Psychologist</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+      :root {
+        --primary-color: #1a237e; /* Deep Blue */
+        --secondary-color: #f5f7fa; /* Soft Light */
+        --accent-color: #ff6f61; /* Coral Accent */
+        --button-hover: #3949ab; /* Lighter Blue */
+        --text-primary: #212121; /* Dark Gray */
+        --text-secondary: #616161; /* Medium Gray */
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background: var(--secondary-color);
+        color: var(--text-primary);
+      }
+      .hero-gradient {
+        background-image: linear-gradient(
+          to top,
+          rgba(26, 35, 126, 0.7) 0%,
+          rgba(26, 35, 126, 0.1) 100%
+        );
+      }
+      .bg-primary {
+        background: var(--primary-color);
+      }
+      .bg-accent {
+        background: var(--accent-color);
+      }
+      .text-accent {
+        color: var(--accent-color);
+      }
+      .btn-primary {
+        background: var(--primary-color);
+        color: #fff;
+        transition: background 0.2s;
+      }
+      .btn-primary:hover {
+        background: var(--button-hover);
+      }
+      .btn-accent {
+        background: var(--accent-color);
+        color: #fff;
+        transition: background 0.2s;
+      }
+      .btn-accent:hover {
+        background: #ff8a65;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-gray-800">
+    <div class="min-h-screen flex flex-col">
+      <header class="sticky top-0 bg-white/80 backdrop-blur-md z-10">
+        <nav
+          class="container mx-auto px-6 lg:px-10 py-4 flex items-center justify-between"
+        >
+          <a class="flex items-center gap-3" href="#home">
+            <svg
+              class="w-8 h-8 text-[var(--primary-color)]"
+              fill="none"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+            <h1 class="text-xl font-bold text-[var(--text-primary)]">
+              Afifa Amassery
+            </h1>
+          </a>
+          <div class="hidden md:flex items-center gap-8">
+            <a
+              class="text-base font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
+              href="#home"
+              >Home</a
+            >
+            <a
+              class="text-base font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
+              href="#about"
+              >About</a
+            >
+            <a
+              class="text-base font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
+              href="#services"
+              >Services</a
+            >
+            <a
+              class="text-base font-medium text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors"
+              href="#contact"
+              >Contact</a
+            >
+          </div>
+          <a
+            class="hidden md:inline-block rounded-md bg-[var(--primary-color)] px-6 py-2.5 text-base font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-all duration-300"
+            href=""
+            target="_blank"
+            rel="noopener"
+          >
+            Book Appointment
+          </a>
+          <button class="md:hidden text-[var(--text-primary)]">
+            <svg
+              aria-hidden="true"
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </nav>
+      </header>
+      <main class="flex-grow">
+        <section
+          class="relative h-[60vh] min-h-[480px] bg-cover bg-center flex items-end"
+          id="home"
+          style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtdTP43t5rrds3axY8aLxkZIHB2U6dJduubYgLscvncTIuhXGhaL2uT9VWbvRo0Gqf6X_XkFwKixND-oMhjz9UidcZSlIi-sO6dutVKX_P3DDuNN_k0SMHIvZOGK7Qw12Gl8e3H__Wc2HbaC6hPAjctOFaWwRtEymyoVhdvI2kiqA0AVA9bcxPfX5Xh4KDb_Pq9kSKCR_yTFp3JvAkm0gzpDag0LdGl-AEMHhLJjUuurqngmeCIgMx9b7-zalO9R917Wa8qEIlqFFE');
+          "
+        >
+          <div class="absolute inset-0 hero-gradient"></div>
+          <div
+            class="relative container mx-auto px-6 lg:px-10 pb-16 text-white max-w-4xl"
+          >
+            <h1
+              class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight mb-4"
+            >
+              Compassionate Care for Mental Wellness
+            </h1>
+            <p class="text-lg md:text-xl max-w-3xl">
+              Afifa amassery is a licensed psychologist dedicated to providing
+              personalized and evidence-based therapy to help individuals
+              achieve their mental health goals.
+            </p>
+            <a
+              class="mt-8 inline-block rounded-md bg-[var(--primary-color)] px-8 py-3 text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-all duration-300"
+              href="https://forms.gle/Wwda3PbX2CPFEwSN8"
+              target="_blank"
+              rel="noopener"
+            >
+              Book an Appointment
+            </a>
+          </div>
+        </section>
+        <section class="py-20 bg-white" id="about">
+          <div class="container mx-auto px-6 lg:px-10">
+            <div class="max-w-4xl mx-auto text-center">
+              <h2
+                class="text-3xl md:text-4xl font-bold text-[var(--text-primary)] tracking-tight"
+              >
+                About Afifa amassery
+              </h2>
+              <p class="mt-6 text-lg text-[var(--text-secondary)] leading-8">
+                Afifa amassery is a clinical psychologist with over 3 years of
+                experience in the field. She specializes in cognitive behavioral
+                therapy (CBT) and mindfulness-based approaches to treat anxiety,
+                depression, and stress-related disorders. Her goal is to create
+                a safe and supportive environment where clients can explore
+                their challenges and develop effective coping strategies.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-slate-50" id="services">
+          <div class="container mx-auto px-6 lg:px-10">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+              <h2
+                class="text-3xl md:text-4xl font-bold text-[var(--text-primary)] tracking-tight"
+              >
+                Our Services
+              </h2>
+              <p class="mt-6 text-lg text-[var(--text-secondary)] leading-8">
+                We offer specialized therapy services to meet your unique needs.
+                Explore our offerings to find the right support for you and your
+                loved ones.
+              </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+              <div class="flex flex-col gap-6">
+                <img
+                  alt="Couple Therapy"
+                  class="rounded-lg shadow-lg object-cover w-full h-64"
+                  src="./couple-therapy.jpg"
+                />
+                <div class="text-center md:text-left">
+                  <h3 class="text-2xl font-bold text-[var(--text-primary)]">
+                    Couple Therapy
+                  </h3>
+                  <p
+                    class="mt-4 text-md text-[var(--text-secondary)] leading-7"
+                  >
+                    Our couple therapy sessions provide a safe and neutral space
+                    for partners to navigate challenges, improve communication,
+                    and strengthen their relationship. We work collaboratively
+                    to address conflicts and build a more resilient and loving
+                    partnership.
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-6">
+                <img
+                  alt="Child Therapy"
+                  class="rounded-lg shadow-lg object-cover w-full h-64"
+                  src="./child-therapy.jpeg"
+                />
+                <div class="text-center md:text-left">
+                  <h3 class="text-2xl font-bold text-[var(--text-primary)]">
+                    Child Therapy
+                  </h3>
+                  <p
+                    class="mt-4 text-md text-[var(--text-secondary)] leading-7"
+                  >
+                    We offer compassionate and effective therapy for children
+                    facing emotional and behavioral challenges. Our play-based
+                    and age-appropriate approaches help children express
+                    themselves, develop coping skills, and thrive in their
+                    environment.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 bg-[var(--secondary-color)]" id="contact">
+          <div class="container mx-auto px-6 lg:px-10">
+            <div class="max-w-2xl mx-auto text-center">
+              <h2
+                class="text-3xl md:text-4xl font-bold text-[var(--text-primary)] tracking-tight"
+              >
+                Ready to Take the Next Step?
+              </h2>
+              <p class="mt-6 text-lg text-[var(--text-secondary)] leading-8">
+                Schedule a confidential consultation with Dr. Sharma today to
+                begin your journey towards mental wellness.
+              </p>
+              <a
+                class="mt-10 inline-block rounded-md bg-[var(--primary-color)] px-8 py-3 text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 transition-all duration-300"
+                href="https://forms.gle/Wwda3PbX2CPFEwSN8"
+                target="_blank"
+                rel="noopener"
+              >
+                Book an Appointment
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-gray-100 border-t border-gray-200">
+        <div
+          class="container mx-auto px-6 lg:px-10 py-8 text-center text-gray-500"
+        >
+          <p>© 2024 Dr. Anya Sharma. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
